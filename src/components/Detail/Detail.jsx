@@ -18,14 +18,15 @@ const Detail = () => {
           if (data.name) {
             setCharacter(data);
             axios
-              .all(character.episode.map((url) => axios(url)))
-              .then((results) => {
-                const episodeInfo = results.map(({ data }) => ({
-                  number: data.episode.split("/").slice(-1)[0],
-                  name: data.name
-                }));
-                setEpisodes(episodeInfo);
-              });
+            .all(data.episode.map((url) => axios(url)))
+            .then((results) => {
+              const episodeInfo = results.map(({ data }) => ({
+                number: data.episode.split("/").slice(-1)[0],
+                name: data.name
+              }));
+              console.log(episodeInfo)
+              setEpisodes(episodeInfo);
+            });
           } else {
             window.alert("No hay personajes con ese ID");
           }
@@ -64,7 +65,7 @@ const Detail = () => {
   
         <div className={style.divepisode}>
           <h2>Episodes:</h2>
-          {episodes?.map((episode, index) => (
+          {episodes?.length > 0 && episodes.map((episode, index) => (
             <h5 key={index}>
               {episode.number}: {episode.name}
             </h5>
