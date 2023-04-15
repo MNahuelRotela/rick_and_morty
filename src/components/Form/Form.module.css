@@ -1,0 +1,67 @@
+.formcontainer{
+    /* font-weight: 20rem; */
+    /* width: 50%; */
+    position: absolute;
+    padding: 10%;
+    padding-bottom: -10%;
+    /* width: 20rem; */
+    height: 100vh;
+    background-color: rgb(183, 46, 183);
+    background:rgba(0, 0, 0, 0.4);
+    background-image: url(../../multimedia/navback.jpg);
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    /* border-radius: 2rem; */
+    display: flex;
+    margin: auto;
+    width:74em;
+    /* height: 100%; */
+    justify-content:center;
+    /* overflow: hidden; */
+    
+    
+    /* margin:auto; */
+    /* margin-top: 15%; */
+    /* position:absolute; */
+    /* bottom: 20rem; */
+    /* position:absolute;
+    left: 15%;
+    top: 0%; */
+    
+}
+.error{
+    color: red;
+    -webkit-text-stroke: 0.0008rem;
+    -webkit-text-stroke-color: white
+    
+}
+.formcontainer input {
+    border-radius: 5px;
+    height: 30px;
+    margin: 1rem;
+}
+.formcontainer button {
+    height: 30px;
+    background-color: rgb(110, 110, 110);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.logo{
+    padding-top: 20px;
+        width: 18em;
+        animation: animation infinite ease-in-out 1600ms;
+}
+
+@keyframes animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.09);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,67 @@
+.container{
+   font-weight: 1rem;
+    width: 150vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    height:fit-content;
+    background-color: rgb(183, 46, 183);
+    background:rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    border-top-right-radius: 2rem ;
+    border-top-left-radius: 2rem ;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    position: absolute;
+    margin: auto;
+    margin-bottom: 40%;
+    top: 30%;
+    left: 13%;
+    display: flex;
+    /* justify-content:center;
+    align-items: center;
+    align-content: center; */
+
+
+}
+
+.titulodiv {
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   top: 10%;
+}
+
+.divparrafo{
+   border-style: groove;
+   border-color: black;
+   border-width: 0,2rem;
+   border-radius: 2rem;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   top: 10%;
+
+}
+.logo{
+   padding-top: 20px;
+       width: 18em;
+       animation: animation infinite ease-in-out 1600ms;
+       /* position: absolute; */
+       align-content: center;
+       justify-content: center;
+       /* display: flex; */
+}
+
+@keyframes animation {
+   0% {
+       transform: scale(1);
+   }
+   50% {
+       transform: scale(1.09);
+   }
+   100% {
+       transform: scale(1);
+   }
+}

@@ -1,0 +1,43 @@
+.container {
+	width: 100%;
+	display: grid;
+    position: absolute;
+    top: 40%;
+    
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.CardsStyle{
+    font-weight: 1rem;
+    width: 20rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    height: 90%;
+    background-color: rgb(183, 46, 183);
+    background:rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    border-top-right-radius: 2rem ;
+    border-top-left-radius: 2rem ;
+    position: relative;
+    margin: auto;
+}
+.img{
+    
+    width: 70%;
+    border-radius: 1000px;
+    transition: all .25s ease-in-out ;
+    cursor:pointer
+    
+    
+
+}
+
+
+:hover.img {
+        transform: scale(1.2);
+        transition: all .25s ease-out
+    }
+

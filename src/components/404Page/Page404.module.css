@@ -1,0 +1,11 @@
+.Blur {
+    padding: 10%;
+    padding-top: 5%;
+    scroll-margin-inline-start: 10%;
+    
+    background:rgba(0, 0, 0, 0.8);
+    
+}
+.imagen {
+    width: 100%;
+}

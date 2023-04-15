@@ -1,0 +1,89 @@
+.nav {
+    background-image: url(../../multimedia/navback.jpg);
+    position: absolute;
+    width:100%;
+    height: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.about {
+    position: absolute;
+    text-align: center;
+    background-image: url(../../multimedia/about1.png);
+    background-size: 100%;
+    background-position: center;
+    height: 8rem;
+    color: white;
+    width: 8rem;
+    font-weight: 5rem;
+    left: 70%;
+    top: 10%;
+    animation:vibrate 3.5s linear both infinite
+}
+
+
+
+
+.logout{
+    position: absolute;
+    background-image: url(../../multimedia/exit.jpeg);
+    height: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    background-position: 50%;
+    background-size: 93%;
+    width: 10rem;
+    font-weight: 5rem;
+    border-radius: 0.5rem;
+    border-width: 2rem;
+    right: 5%;
+    top: 25%;
+}
+
+.logo{
+    padding-bottom: 20rem;
+    top:-7%;
+        width: 13em;
+        animation: animation infinite ease-in-out 1600ms;
+        left: 3%;
+        position: absolute;
+        transition: all .25s ease-in-out ;
+}
+:hover.logo {
+    transform: scale(1.2);
+    transition: all .25s ease-out
+}
+
+@keyframes animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.09);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes vibrate 
+    {0% {
+        transform:translate(0)
+    }
+    20% {
+        transform:translate(-2px,9px)
+    }
+    40% {
+        transform:translate(-3px,-7px)
+    }
+    60% {
+        transform:translate(7px,4px)
+    }
+    80%{
+        transform:translate(-6px,-6px)
+    }
+    100%{
+        transform:translate(0)
+    }
+}
